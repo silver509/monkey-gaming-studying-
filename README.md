@@ -1,1 +1,3 @@
-# monkey-gaming-studying-
+# monkey-gaming-studying
+
+Afghanistan-based gambling scammers
