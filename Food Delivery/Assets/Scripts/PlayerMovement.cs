@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour {
     [SerializeField] private Joystick _joystick;
     [SerializeField] private Rigidbody _rigidbody;
     [SerializeField] private Canvas canvas;
-    private bool driving = false;
+    public bool driving = false;
     Image img1;
     Image img2;
     

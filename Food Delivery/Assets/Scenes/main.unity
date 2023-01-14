@@ -256,6 +256,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &142960569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142960564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1a8b93df8223964f8027224e237a99f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  driving: {fileID: 0}
+  animator: {fileID: 142960565}
+  rb: {fileID: 142960568}
 --- !u!1001 &481346666
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1047,6 +1062,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DeliveryGuy
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b18d3df5a2330142a2da37fe6cbab11,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 2021736696045846144, guid: 3b18d3df5a2330142a2da37fe6cbab11,
         type: 3}
