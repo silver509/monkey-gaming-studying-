@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class collisionController : MonoBehaviour
 {
+
+    public List<GameObject> inventory;
     private void OnCollisionEnter(Collision collider)
     {
 
@@ -14,6 +16,8 @@ public class collisionController : MonoBehaviour
         else if (this.gameObject.tag == "Restaurant" && collider.gameObject.tag == "Player")
         {
             Debug.Log("picked up");
+            inventory.Add(collider.gameObject);
+            Debug.Log(inventory);
         }
     }
 }
