@@ -6,17 +6,16 @@ public class PlayerMovement : MonoBehaviour {
     [SerializeField] private Joystick _joystick;
     [SerializeField] private Rigidbody _rigidbody;
     [SerializeField] private Canvas canvas;
-    public bool driving = false;
+    private bool driving = false;
     Image img1;
     Image img2;
     
 
-    private void Start(){
+    private void Awake(){
         img1 = _joystick.GetComponent<Image>();
         img2 = _joystick.transform.GetChild(0).GetComponent<Image>();
         img1.enabled = false;
         img2.enabled = false;
- 
     }
     private void Update()
     {
@@ -40,7 +39,6 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     private void FixedUpdate(){
-        this.GetComponent<PlayerMovement>().enabled = true;
         Debug.Log("1");
         if (driving){
             Debug.Log("2");
