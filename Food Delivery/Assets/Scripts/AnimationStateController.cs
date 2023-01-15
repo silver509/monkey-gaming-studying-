@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class AnimationStateController : MonoBehaviour
 {
-    [SerializeField] PlayerMovement driving;
+    [SerializeField] PlayerMovement script;
     public Animator animator;
     public Rigidbody rb;
 
@@ -17,7 +18,7 @@ public class AnimationStateController : MonoBehaviour
     void Update()
     {
        
-        if(driving.driving == true)
+        if(Mathf.Round(Math.Abs(rb.velocity.magnitude)) > 0)
         {
             animator.SetBool("isWalking", true);
         } else

@@ -11,11 +11,12 @@ public class PlayerMovement : MonoBehaviour {
     Image img2;
     
 
-    private void Awake(){
+    private void Start(){
         img1 = _joystick.GetComponent<Image>();
         img2 = _joystick.transform.GetChild(0).GetComponent<Image>();
         img1.enabled = false;
         img2.enabled = false;
+ 
     }
     private void Update()
     {
@@ -39,6 +40,7 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     private void FixedUpdate(){
+        this.GetComponent<PlayerMovement>().enabled = true;
         Debug.Log("1");
         if (driving){
             Debug.Log("2");
